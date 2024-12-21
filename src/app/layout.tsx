@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chat_Application",
+  title: "ChatConnect",
   description: "For lightning fast chatting",
 };
 

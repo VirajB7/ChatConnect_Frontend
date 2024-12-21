@@ -18,7 +18,7 @@ const handleGoogleLogin = async () => {
   });
 };
 
-export default function LoginModal() {
+export default function LoginModel() {
   return (
     <Dialog>
       <DialogTrigger asChild>

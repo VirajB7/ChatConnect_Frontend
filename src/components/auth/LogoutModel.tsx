@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { signOut } from "next-auth/react";
 
-export default function LogoutModal({
+export default function LogoutModel({
   open,
   setOpen,
 }: {
