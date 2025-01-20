@@ -2,9 +2,8 @@ import { Account, AuthOptions, ISODateString, User } from "next-auth";
 import { JWT } from "next-auth/jwt";
 import GoogleProvider from "next-auth/providers/google";
 import axios, { AxiosError } from "axios";
-import { LOGIN_URL } from "@/lib/apiEndPoints";
+import { LOGIN_URL } from "@/lib/apiAuthRoutes";
 import { redirect } from "next/navigation";
-
 export interface CustomSession {
   user?: CustomUser;
   expires: ISODateString;
@@ -85,5 +84,5 @@ export const authOptions: AuthOptions = {
         },
       },
     }),
-  ],
+  ],secret: process.env.NEXTAUTH_SECRET,
 };
